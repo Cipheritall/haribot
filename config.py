@@ -5,7 +5,7 @@
 import yaml
 
 def get_binance_keys():
-    with open("./.keys.yml", 'r') as stream:
+    with open("../.keys.yml", 'r') as stream:
         try:
             parsed_yaml=yaml.safe_load(stream)
             return parsed_yaml["binance"]['api_key'],parsed_yaml["binance"]['api_secret']
